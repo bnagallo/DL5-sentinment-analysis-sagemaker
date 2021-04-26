@@ -1,0 +1,152 @@
+message
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+"2021-04-26 21:20:56,288 sagemaker-containers INFO     Imported framework sagemaker_pytorch_container.training"
+"2021-04-26 21:20:56,291 sagemaker-containers INFO     No GPUs detected (normal if no gpus installed)"
+"2021-04-26 21:20:56,306 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed."
+"2021-04-26 21:21:02,545 sagemaker_pytorch_container.training INFO     Invoking user training script."
+"2021-04-26 21:21:02,796 sagemaker-containers INFO     Module train does not provide a setup.py. "
+Generating setup.py
+"2021-04-26 21:21:02,796 sagemaker-containers INFO     Generating setup.cfg"
+"2021-04-26 21:21:02,797 sagemaker-containers INFO     Generating MANIFEST.in"
+"2021-04-26 21:21:02,797 sagemaker-containers INFO     Installing module with the following command:"
+/usr/bin/python -m pip install -U . -r requirements.txt
+Processing /opt/ml/code
+Collecting pandas (from -r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/74/24/0cdbf8907e1e3bc5a8da03345c23cbed7044330bb8f73bb12e711a640a00/pandas-0.24.2-cp35-cp35m-manylinux1_x86_64.whl (10.0MB)
+Collecting numpy (from -r requirements.txt (line 2))
+  Downloading https://files.pythonhosted.org/packages/b5/36/88723426b4ff576809fec7d73594fe17a35c27f8d01f93637637a29ae25b/numpy-1.18.5-cp35-cp35m-manylinux1_x86_64.whl (19.9MB)
+"Collecting nltk (from -r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/5e/37/9532ddd4b1bbb619333d5708aaad9bf1742f051a664c3c6fa6632a105fd8/nltk-3.6.2-py3-none-any.whl (1.5MB)"
+"Collecting beautifulsoup4 (from -r requirements.txt (line 4))
+  Downloading https://files.pythonhosted.org/packages/d1/41/e6495bd7d3781cee623ce23ea6ac73282a373088fcd0ddc809a047b18eae/beautifulsoup4-4.9.3-py3-none-any.whl (115kB)"
+"Collecting html5lib (from -r requirements.txt (line 5))
+  Downloading https://files.pythonhosted.org/packages/6c/dd/a834df6482147d48e225a49515aabc28974ad5a4ca3215c18a882565b028/html5lib-1.1-py2.py3-none-any.whl (112kB)"
+"Collecting pytz>=2011k (from pandas->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/70/94/784178ca5dd892a98f113cdd923372024dc04b8d40abe77ca76b5fb90ca6/pytz-2021.1-py2.py3-none-any.whl (510kB)"
+"Requirement already satisfied, skipping upgrade: python-dateutil>=2.5.0 in /usr/local/lib/python3.5/dist-packages (from pandas->-r requirements.txt (line 1)) (2.7.5)"
+"Requirement already satisfied, skipping upgrade: click in /usr/local/lib/python3.5/dist-packages (from nltk->-r requirements.txt (line 3)) (7.0)"
+"Collecting joblib (from nltk->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/28/5c/cf6a2b65a321c4a209efcdf64c2689efae2cb62661f8f6f4bb28547cf1bf/joblib-0.14.1-py2.py3-none-any.whl (294kB)"
+"Collecting regex (from nltk->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/38/3f/4c42a98c9ad7d08c16e7d23b2194a0e4f3b2914662da8bc88986e4e6de1f/regex-2021.4.4.tar.gz (693kB)"
+"Collecting tqdm (from nltk->-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/72/8a/34efae5cf9924328a8f34eeb2fdaae14c011462d9f0e3fcded48e1266d1c/tqdm-4.60.0-py2.py3-none-any.whl (75kB)"
+"Collecting soupsieve>1.2; python_version >= ""3.0"" (from beautifulsoup4->-r requirements.txt (line 4))
+  Downloading https://files.pythonhosted.org/packages/02/fb/1c65691a9aeb7bd6ac2aa505b84cb8b49ac29c976411c6ab3659425e045f/soupsieve-2.1-py3-none-any.whl"
+"Requirement already satisfied, skipping upgrade: six>=1.9 in /usr/local/lib/python3.5/dist-packages (from html5lib->-r requirements.txt (line 5)) (1.11.0)"
+"Collecting webencodings (from html5lib->-r requirements.txt (line 5))
+  Downloading https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl"
+"Building wheels for collected packages: train, regex
+  Running setup.py bdist_wheel for train: started
+  Running setup.py bdist_wheel for train: finished with status 'done'
+  Stored in directory: /tmp/pip-ephem-wheel-cache-j3eswfs5/wheels/35/24/16/37574d11bf9bde50616c67372a334f94fa8356bc7164af8ca3
+  Running setup.py bdist_wheel for regex: started"
+"  Running setup.py bdist_wheel for regex: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/c9/05/a8/b85fa0bd7850b99f9b4f106972975f2e3c46412e12f9949b58"
+Successfully built train regex
+"Installing collected packages: numpy, pytz, pandas, joblib, regex, tqdm, nltk, soupsieve, beautifulsoup4, webencodings, html5lib, train
+  Found existing installation: numpy 1.15.4"
+    Uninstalling numpy-1.15.4:
+      Successfully uninstalled numpy-1.15.4
+Successfully installed beautifulsoup4-4.9.3 html5lib-1.1 joblib-0.14.1 nltk-3.6.2 numpy-1.18.5 pandas-0.24.2 pytz-2021.1 regex-2021.4.4 soupsieve-2.1 tqdm-4.60.0 train-1.0.0 webencodings-0.5.1
+"You are using pip version 18.1, however version 20.3.4 is available."
+You should consider upgrading via the 'pip install --upgrade pip' command.
+"2021-04-26 21:21:26,682 sagemaker-containers INFO     No GPUs detected (normal if no gpus installed)"
+"2021-04-26 21:21:26,697 sagemaker-containers INFO     Invoking user script
+"
+"Training Env:
+"
+"{
+    ""user_entry_point"": ""train.py"",
+    ""output_intermediate_dir"": ""/opt/ml/output/intermediate"",
+    ""additional_framework_parameters"": {},
+    ""model_dir"": ""/opt/ml/model"",
+    ""module_name"": ""train"",
+    ""resource_config"": {
+        ""current_host"": ""algo-1"",
+        ""network_interface_name"": ""eth0"",
+        ""hosts"": [
+            ""algo-1""
+        ]
+    },
+    ""num_gpus"": 0,
+    ""log_level"": 20,
+    ""output_data_dir"": ""/opt/ml/output/data"",
+    ""module_dir"": ""s3://sagemaker-us-east-2-438247262030/sagemaker-pytorch-2021-04-26-21-17-53-398/source/sourcedir.tar.gz"",
+    ""hyperparameters"": {
+        ""hidden_dim"": 200,
+        ""epochs"": 10
+    },
+    ""num_cpus"": 4,
+    ""hosts"": [
+        ""algo-1""
+    ],
+    ""current_host"": ""algo-1"",
+    ""input_dir"": ""/opt/ml/input"",
+    ""input_config_dir"": ""/opt/ml/input/config"",
+    ""output_dir"": ""/opt/ml/output"",
+    ""channel_input_dirs"": {
+        ""training"": ""/opt/ml/input/data/training""
+    },
+    ""framework_module"": ""sagemaker_pytorch_container.training:main"",
+    ""job_name"": ""sagemaker-pytorch-2021-04-26-21-17-53-398"",
+    ""network_interface_name"": ""eth0"",
+    ""input_data_config"": {
+        ""training"": {
+            ""TrainingInputMode"": ""File"",
+            ""RecordWrapperType"": ""None"",
+            ""S3DistributionType"": ""FullyReplicated""
+        }
+    }"
+"}
+"
+"Environment variables:
+"
+SM_OUTPUT_INTERMEDIATE_DIR=/opt/ml/output/intermediate
+SM_INPUT_CONFIG_DIR=/opt/ml/input/config
+"SM_TRAINING_ENV={""additional_framework_parameters"":{},""channel_input_dirs"":{""training"":""/opt/ml/input/data/training""},""current_host"":""algo-1"",""framework_module"":""sagemaker_pytorch_container.training:main"",""hosts"":[""algo-1""],""hyperparameters"":{""epochs"":10,""hidden_dim"":200},""input_config_dir"":""/opt/ml/input/config"",""input_data_config"":{""training"":{""RecordWrapperType"":""None"",""S3DistributionType"":""FullyReplicated"",""TrainingInputMode"":""File""}},""input_dir"":""/opt/ml/input"",""job_name"":""sagemaker-pytorch-2021-04-26-21-17-53-398"",""log_level"":20,""model_dir"":""/opt/ml/model"",""module_dir"":""s3://sagemaker-us-east-2-438247262030/sagemaker-pytorch-2021-04-26-21-17-53-398/source/sourcedir.tar.gz"",""module_name"":""train"",""network_interface_name"":""eth0"",""num_cpus"":4,""num_gpus"":0,""output_data_dir"":""/opt/ml/output/data"",""output_dir"":""/opt/ml/output"",""output_intermediate_dir"":""/opt/ml/output/intermediate"",""resource_config"":{""current_host"":""algo-1"",""hosts"":[""algo-1""],""network_interface_name"":""eth0""},""user_entry_point"":""train.py""}"
+SM_USER_ENTRY_POINT=train.py
+SM_OUTPUT_DATA_DIR=/opt/ml/output/data
+SM_NETWORK_INTERFACE_NAME=eth0
+SM_CURRENT_HOST=algo-1
+SM_NUM_GPUS=0
+SM_NUM_CPUS=4
+SM_MODEL_DIR=/opt/ml/model
+SM_HP_HIDDEN_DIM=200
+SM_OUTPUT_DIR=/opt/ml/output
+SM_LOG_LEVEL=20
+PYTHONPATH=/usr/local/bin:/usr/lib/python35.zip:/usr/lib/python3.5:/usr/lib/python3.5/plat-x86_64-linux-gnu:/usr/lib/python3.5/lib-dynload:/usr/local/lib/python3.5/dist-packages:/usr/lib/python3/dist-packages
+SM_HP_EPOCHS=10
+SM_INPUT_DIR=/opt/ml/input
+"SM_RESOURCE_CONFIG={""current_host"":""algo-1"",""hosts"":[""algo-1""],""network_interface_name"":""eth0""}"
+SM_FRAMEWORK_PARAMS={}
+"SM_INPUT_DATA_CONFIG={""training"":{""RecordWrapperType"":""None"",""S3DistributionType"":""FullyReplicated"",""TrainingInputMode"":""File""}}"
+SM_MODULE_DIR=s3://sagemaker-us-east-2-438247262030/sagemaker-pytorch-2021-04-26-21-17-53-398/source/sourcedir.tar.gz
+"SM_HOSTS=[""algo-1""]"
+"SM_USER_ARGS=[""--epochs"",""10"",""--hidden_dim"",""200""]"
+SM_CHANNEL_TRAINING=/opt/ml/input/data/training
+"SM_CHANNELS=[""training""]"
+SM_MODULE_NAME=train
+"SM_HPS={""epochs"":10,""hidden_dim"":200}"
+"SM_FRAMEWORK_MODULE=sagemaker_pytorch_container.training:main
+"
+"Invoking script with the following command:
+"
+"/usr/bin/python -m train --epochs 10 --hidden_dim 200
+
+"
+Using device cpu.
+Get train data loader.
+"Model loaded with embedding_dim 32, hidden_dim 200, vocab_size 5000."
+"Epoch: 1, BCELoss: 0.6708191791359259"
+"Epoch: 2, BCELoss: 0.5819808840751648"
+"Epoch: 3, BCELoss: 0.4953146157216053"
+"Epoch: 4, BCELoss: 0.4277516183804493"
+"Epoch: 5, BCELoss: 0.39393498642104013"
+"Epoch: 6, BCELoss: 0.35260946045116504"
+"Epoch: 7, BCELoss: 0.3219282341246702"
+"Epoch: 8, BCELoss: 0.31497817684193047"
+"Epoch: 9, BCELoss: 0.2866412392076181"
+"Epoch: 10, BCELoss: 0.2764456789104306"
+"2021-04-26 23:22:56,547 sagemaker-containers INFO     Reporting training SUCCESS"
